@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GreenNest — Cleaning &amp; Landscapes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- ============ SIDE PANEL ============ -->
+  <aside class="side">
+    <div class="side-top">
+      <a href="#top" class="side-brand">
+        <svg viewBox="0 0 40 40" fill="none"><path d="M20 4c-7 6-11 11-11 17a11 11 0 0022 0c0-6-4-11-11-17Z" fill="#2F8FE5"/><path d="M20 36c-5-3-7-7-7-11a7 7 0 0114 0c0 4-2 8-7 11Z" fill="#3FCB6B"/></svg>
+        <span>GreenNest</span>
+      </a>
+      <p class="side-tag">Cleaning &amp; Landscapes<br>Nairobi, Kenya</p>
+    </div>
+
+    <nav class="side-nav">
+      <a href="#story"><span>01</span>Story</a>
+      <a href="#calculator"><span>02</span>Build a quote</a>
+      <a href="#services"><span>03</span>Services</a>
+      <a href="#standards"><span>04</span>Standards</a>
+      <a href="#process"><span>05</span>Process</a>
+      <a href="#contact"><span>06</span>Contact</a>
+    </nav>
+
+    <div class="side-bottom">
+      <a class="side-whatsapp" href="https://wa.me/254707374749" target="_blank" rel="noopener">
+        <span class="dot"></span> +254 707 374 749
+      </a>
+      <svg class="side-pattern" viewBox="0 0 300 24" preserveAspectRatio="none">
+        <g fill="none" stroke="#3FCB6B" stroke-width="1" opacity=".5">
+          <path d="M0 12l12-12 12 12-12 12Z"/><path d="M24 12l12-12 12 12-12 12Z"/><path d="M48 12l12-12 12 12-12 12Z"/>
+          <path d="M72 12l12-12 12 12-12 12Z"/><path d="M96 12l12-12 12 12-12 12Z"/><path d="M120 12l12-12 12 12-12 12Z"/>
+          <path d="M144 12l12-12 12 12-12 12Z"/><path d="M168 12l12-12 12 12-12 12Z"/><path d="M192 12l12-12 12 12-12 12Z"/>
+          <path d="M216 12l12-12 12 12-12 12Z"/><path d="M240 12l12-12 12 12-12 12Z"/><path d="M264 12l12-12 12 12-12 12Z"/>
+          <path d="M288 12l12-12 12 12-12 12Z"/>
+        </g>
+      </svg>
+    </div>
+  </aside>
+
+  <!-- mobile top bar -->
+  <header class="mobile-bar">
+    <a href="#top" class="side-brand">
+      <svg viewBox="0 0 40 40" fill="none" style="width:24px;height:24px;"><path d="M20 4c-7 6-11 11-11 17a11 11 0 0022 0c0-6-4-11-11-17Z" fill="#2F8FE5"/><path d="M20 36c-5-3-7-7-7-11a7 7 0 0114 0c0 4-2 8-7 11Z" fill="#3FCB6B"/></svg>
+      <span>GreenNest</span>
+    </a>
+    <a class="mobile-cta" href="https://wa.me/254707374749" target="_blank" rel="noopener">Quote</a>
+  </header>
+
+  <!-- ============ MAIN ============ -->
+  <main class="main" id="top">
+
+    <!-- ---------- STORY / HERO ---------- -->
+    <section class="story" id="story">
+      <span class="kicker reveal">Nairobi-built · Two crafts, one team</span>
+      <h1 class="reveal d1">Spaces handled<br>with <em>one</em> standard,<br>inside and out.</h1>
+      <p class="story-lede reveal d2">GreenNest runs cleaning and landscaping as a single discipline — offices, hotels, hospitals and homes on one side, gardens and grounds on the other, scheduled and billed as one job.</p>
+
+      <div class="story-counters reveal d2">
+        <div class="counter"><b data-count="2">0</b><span>Service divisions</span></div>
+        <div class="counter"><b data-count="7">0</b><span>Standing service lines</span></div>
+        <div class="counter"><b data-count="24" data-suffix="h">0</b><span>Quote turnaround</span></div>
+      </div>
+
+      <a class="story-scroll" href="#calculator">
+        <span>Build your quote</span>
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 4v16M5 13l7 7 7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </section>
+
+    <!-- ---------- CALCULATOR ---------- -->
+    <section class="calc-section" id="calculator">
+      <span class="section-kicker reveal">02 — Build a quote</span>
+      <h2 class="reveal d1">Tell us what you need.<br>We'll draft the message.</h2>
+      <p class="section-lede reveal d2">Pick a property type and the services you're after — this builds a ready-to-send WhatsApp message, no typing required.</p>
+
+      <div class="calc reveal d2">
+        <div class="calc-step">
+          <span class="calc-label">Property type</span>
+          <div class="calc-options" id="propertyOptions">
+            <button data-value="a home">Home</button>
+            <button data-value="an office">Office</button>
+            <button data-value="an institution (school, clinic or hotel)">Institution</button>
+          </div>
+        </div>
+
+        <div class="calc-step">
+          <span class="calc-label">Services needed</span>
+          <div class="calc-options multi" id="serviceOptions">
+            <button data-value="indoor cleaning">Indoor cleaning</button>
+            <button data-value="disinfection &amp; sanitization">Disinfection</button>
+            <button data-value="landscaping &amp; grounds maintenance">Landscaping</button>
+            <button data-value="plant styling &amp; potted plant supply">Plant styling</button>
+          </div>
+        </div>
+
+        <div class="calc-output">
+          <span class="calc-label">Your message</span>
+          <p id="calcSummary">Pick a property type and at least one service above.</p>
+          <a id="calcSend" class="btn btn-disabled" href="#" target="_blank" rel="noopener">Send to WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- SERVICES ---------- -->
+    <section class="services" id="services">
+      <span class="section-kicker reveal">03 — The full list</span>
+      <h2 class="reveal d1">Seven lines.<br>One standard sheet.</h2>
+
+      <div class="service-list">
+        <article class="service-row reveal">
+          <span class="service-index">01</span>
+          <div class="service-body"><h3>Office &amp; Corporate Cleaning</h3><p>Daily, weekly or deep cleans scheduled around your business hours.</p></div>
+          <span class="service-tag indoor">Indoor</span>
+        </article>
+        <article class="service-row reveal">
+          <span class="service-index">02</span>
+          <div class="service-body"><h3>Institutional Cleaning</h3><p>Schools, clinics and facilities — protocols built for high foot traffic and compliance.</p></div>
+          <span class="service-tag indoor">Indoor</span>
+        </article>
+        <article class="service-row reveal">
+          <span class="service-index">03</span>
+          <div class="service-body"><h3>Post-Construction Cleanup</h3><p>Dust, debris and residue cleared so a finished space is actually move-in ready.</p></div>
+          <span class="service-tag indoor">Indoor</span>
+        </article>
+        <article class="service-row reveal">
+          <span class="service-index">04</span>
+          <div class="service-body"><h3>Move-In / Move-Out Cleaning</h3><p>A full reset between tenants, so handovers don't slow down a lease.</p></div>
+          <span class="service-tag indoor">Indoor</span>
+        </article>
+        <article class="service-row reveal">
+          <span class="service-index">05</span>
+          <div class="service-body"><h3>Disinfection &amp; Sanitization</h3><p>Targeted treatment of high-touch surfaces for spaces that can't risk it.</p></div>
+          <span class="service-tag indoor">Indoor</span>
+        </article>
+        <article class="service-row reveal">
+          <span class="service-index">06</span>
+          <div class="service-body"><h3>Landscaping &amp; Grounds Maintenance</h3><p>Lawns, hedges and grounds kept sharp on a standing schedule.</p></div>
+          <span class="service-tag outdoor">Outdoor</span>
+        </article>
+        <article class="service-row reveal">
+          <span class="service-index">07</span>
+          <div class="service-body"><h3>Gardening &amp; Plant Styling</h3><p>Garden design plus potted plant sourcing and placement for offices and homes.</p></div>
+          <span class="service-tag outdoor">Outdoor</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- ---------- STANDARDS ---------- -->
+    <section class="standards" id="standards">
+      <span class="section-kicker reveal">04 — What we don't bend on</span>
+      <h2 class="reveal d1">Six standards,<br>every visit.</h2>
+      <div class="standards-grid">
+        <div class="standard reveal"><span class="standard-mark">✓</span><h3>Professional Team</h3><p>Trained on both crafts, not handed a mop on day one.</p></div>
+        <div class="standard reveal"><span class="standard-mark">✓</span><h3>Detail Driven</h3><p>Checked against a list, not a glance on the way out.</p></div>
+        <div class="standard reveal"><span class="standard-mark">✓</span><h3>Safe Products</h3><p>Safe around kids, pets, patients and staff — no shortcuts.</p></div>
+        <div class="standard reveal"><span class="standard-mark">✓</span><h3>Competitive Rates</h3><p>Scope before invoice, every time.</p></div>
+        <div class="standard reveal"><span class="standard-mark">✓</span><h3>Reliable Service</h3><p>On the schedule you agreed to, not a rough estimate.</p></div>
+        <div class="standard reveal"><span class="standard-mark">✓</span><h3>Consistent Results</h3><p>Visit ten looks like visit one.</p></div>
+      </div>
+    </section>
+
+    <!-- ---------- PROCESS ---------- -->
+    <section class="process" id="process">
+      <span class="section-kicker reveal">05 — How it runs</span>
+      <h2 class="reveal d1">Three steps,<br>start to finish.</h2>
+      <div class="process-list">
+        <div class="process-step reveal">
+          <span class="process-num">01</span>
+          <div><h3>Tell us the space</h3><p>Use the quote builder above or message us directly — property type, size, what's bothering you.</p></div>
+        </div>
+        <div class="process-step reveal">
+          <span class="process-num">02</span>
+          <div><h3>Get a clear scope</h3><p>Inclusions, schedule and price, in writing, before anyone is booked.</p></div>
+        </div>
+        <div class="process-step reveal">
+          <span class="process-num">03</span>
+          <div><h3>We handle it</h3><p>On time, on the checklist, leaving the space actually done — clean, planted, or both.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- TESTIMONIAL ---------- -->
+    <section class="testimonial reveal">
+      <svg class="quote-mark" viewBox="0 0 48 36" fill="none"><path d="M0 36V20C0 8 8 1 18 0v6C11 7 7 11 7 17h7v19H0Zm24 0V20C24 8 32 1 42 0v6c-7 1-11 5-11 11h7v19H24Z" fill="#3FCB6B" opacity=".4"/></svg>
+      <p class="testimonial-quote">They clean our clinic twice a week and handle the courtyard garden on the same visit. One invoice, one team, zero scheduling headache.</p>
+      <p class="testimonial-who">Facilities Manager, Nairobi clinic</p>
+    </section>
+
+    <!-- ---------- CONTACT / FOOTER ---------- -->
+    <section class="contact" id="contact">
+      <svg class="contact-pattern" viewBox="0 0 600 32" preserveAspectRatio="none">
+        <g fill="none" stroke="#2F8FE5" stroke-width="1" opacity=".4">
+          <path d="M0 16l16-16 16 16-16 16Z"/><path d="M32 16l16-16 16 16-16 16Z"/><path d="M64 16l16-16 16 16-16 16Z"/>
+          <path d="M96 16l16-16 16 16-16 16Z"/><path d="M128 16l16-16 16 16-16 16Z"/><path d="M160 16l16-16 16 16-16 16Z"/>
+          <path d="M192 16l16-16 16 16-16 16Z"/><path d="M224 16l16-16 16 16-16 16Z"/><path d="M256 16l16-16 16 16-16 16Z"/>
+          <path d="M288 16l16-16 16 16-16 16Z"/><path d="M320 16l16-16 16 16-16 16Z"/><path d="M352 16l16-16 16 16-16 16Z"/>
+          <path d="M384 16l16-16 16 16-16 16Z"/><path d="M416 16l16-16 16 16-16 16Z"/><path d="M448 16l16-16 16 16-16 16Z"/>
+          <path d="M480 16l16-16 16 16-16 16Z"/><path d="M512 16l16-16 16 16-16 16Z"/><path d="M544 16l16-16 16 16-16 16Z"/>
+          <path d="M576 16l16-16 16 16-16 16Z"/>
+        </g>
+      </svg>
+      <span class="section-kicker reveal">06 — Get in touch</span>
+      <h2 class="reveal d1">Let's see your<br><em>property</em>.</h2>
+      <p class="section-lede reveal d2">No site visit needed to get a number back — just the property type and what's bothering you.</p>
+      <div class="contact-actions reveal d2">
+        <a class="btn btn-sun" href="https://wa.me/254707374749" target="_blank" rel="noopener">Message on WhatsApp</a>
+        <a class="btn btn-line" href="mailto:greennest@gmail.com">Email instead</a>
+      </div>
+      <p class="contact-line reveal d2">+254 707 374 749 · greennest@gmail.com · Nairobi, Kenya</p>
+      <p class="footer-line">© 2026 GreenNest Cleaning &amp; Landscapes. Built in Nairobi.</p>
+    </section>
+
+  </main>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
